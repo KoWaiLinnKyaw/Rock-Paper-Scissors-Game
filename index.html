@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <!--header-->
+   <h1 class="header">RPS Game</h1>
+
+     <!--pick button-->
+     <div class="choiceBtn">
+        <button class="rock" onclick="play('rock')">
+            <i class="fa-regular fa-hand-back-fist"></i>
+            <p>ROCK</p>
+        </button>
+        <button class="paper" onclick="play('paper')">
+            <i class="fa-regular fa-hand"></i>
+            <p>PAPER</p>
+        </button>
+        <button class="scissors" onclick="play('scissors')">
+            <i class="fa-regular fa-hand-scissors"></i>
+            <p>SCISSORS</p>
+        </button>
+     </div>
+
+      <!--Our Choice-->
+     <div class="outputArea">
+        <h4 class="human-text">My Choice :
+            <span class="human"></span>
+        </h4>
+        <h4 class="computer-text"> Computer Choice :
+            <span class="computer"></span>
+        </h4>
+     </div>
+
+     <!--result-->
+     <div class="resultArea">
+        <button class="won hidden"><i class="fa-regular fa-face-smile"></i>You Won!</button>
+        <button class="lose hidden"><i class="fa-regular fa-face-sad-cry"></i>You Lose!</button>
+        <button class="draw hidden"><i class="fa-regular fa-face-surprise"></i>It's a tie!</button>        
+     </div>
+
+</body>
+<script src="./rpsGame.js"></script>
+</html>

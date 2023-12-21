@@ -1,0 +1,85 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+.header {
+    color: rgb(1, 37, 108);
+    margin-top: 50px;
+}
+
+/* buttons */
+button {
+    border: none;
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+}
+
+button i {
+    font-size: 30px;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+.choiceBtn {
+    margin: 10px;
+}
+
+.rock {
+    background-color: red;
+}
+
+.paper {
+    background-color: green;
+}
+
+.scissors {
+    background-color: blue;
+}
+
+.human-text, .computer-text {
+    margin-top: 50px;
+}
+
+.human, .computer {
+    color: red;
+}
+
+/* result */
+.resultArea {
+    margin-top: 30px;
+   
+}
+.resultArea i {
+    margin-right: 10px;
+}
+
+.won {
+    background-color: green;
+    cursor: default;
+}
+
+.lose {
+    background-color: red;
+    cursor: default;
+}
+
+.draw {
+    background-color: blue;
+    cursor: default;
+}
+
+/* Display None */
+.hidden {
+    display: none;
+}
+
